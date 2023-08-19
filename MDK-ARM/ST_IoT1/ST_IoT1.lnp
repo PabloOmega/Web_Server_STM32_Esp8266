@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"st_iot1\startup_stm32f103xb.o"
+"st_iot1\stm32f1xx_hal_tim_ex.o"
+"st_iot1\stm32f1xx_hal_pwr.o"
+"st_iot1\stm32f1xx_hal_gpio_ex.o"
+"st_iot1\stm32f1xx_hal_rcc_ex.o"
+"st_iot1\stm32f1xx_hal_flash.o"
+"st_iot1\stm32f1xx_hal_flash_ex.o"
+"st_iot1\stm32f1xx_hal_tim.o"
+"st_iot1\stm32f1xx_hal_cortex.o"
+"st_iot1\stm32f1xx_hal_dma.o"
+"st_iot1\stm32f1xx_hal_rcc.o"
+"st_iot1\stm32f1xx_hal_gpio.o"
+"st_iot1\stm32f1xx_hal.o"
+"st_iot1\stm32f1xx_hal_uart.o"
+"st_iot1\main.o"
+"st_iot1\stm32f1xx_it.o"
+"st_iot1\stm32f1xx_hal_msp.o"
+"st_iot1\network.o"
+"st_iot1\esp8266.o"
+"st_iot1\syslog.o"
+"st_iot1\tcp.o"
+"st_iot1\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "ST_IoT1\ST_IoT1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ST_IoT1.map" -o ST_IoT1\ST_IoT1.axf
