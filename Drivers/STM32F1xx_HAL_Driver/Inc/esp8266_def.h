@@ -43,6 +43,5 @@ void EspSetMode(mode_t espMode);
 HAL_StatusTypeDef EspConnect(const char * espNet, const char * espPass);
 uint8_t * EspCmpStr(uint8_t * s1, uint8_t * s2);
 void EspFlush(void);
-//uint8_t data2[] = "HTTP/1.0 200 OK\r\nContent-Type:text/html\r\n\r\n\n<html>\n<head></head>\n<body>Hugo Puto.l.</body>\n</html>";
 
 /* FIN */
